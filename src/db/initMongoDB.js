@@ -15,3 +15,8 @@ export const initMongoConnection = async () => {
         console.log("Error while setting up mongo connection", error);
     }
 };
+
+console.log('User:', process.env.MONGODB_USER);
+console.log('Password:', process.env.MONGODB_PASSWORD);
+console.log('URL:', process.env.MONGODB_URL);
+console.log('Database:', process.env.MONGODB_DB);
